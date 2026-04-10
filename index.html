@@ -14,9 +14,9 @@
             <img src="img/logo.png" alt="Логотип">
         </div>
         <nav class="nav">
-            <a href="#">Про курс</a>
-            <a href="#">Відгуки</a>
-            <a href="#">Контакти</a>
+            <a href="#about">Про курс</a>
+            <a href="#program">Відгуки</a>
+            <a href="#contact">Контакти</a>
         </nav>
     </div>
 </header>
@@ -28,13 +28,13 @@
             <h1>Онлайн-курс веб-розробки</h1>
             <p>Навчись створювати сайти з нуля</p>
             <div class="hero__buttons">
-                <button class="btn primary">Почати навчання</button>
-                <button class="btn secondary">Програма</button>
+                <button class="btn primary openModal">Почати навчання</button>
+                <button class="btn secondary scrollToProgram">Програма</button>
             </div>
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container about__inner">
             <div class="about__text">
                 <h2>ПРО КУРС</h2>
@@ -42,7 +42,7 @@
                     Цей курс навчить вас основам HTML, CSS та JavaScript.
                     Ви зможете створювати сучасний та адаптивний веб-сайт з нуля.
                 </p>
-                <button class="btn primary">Записатись</button>
+                <button class="btn primary openModal">Записатись</button>
             </div>
             <div class="about__image">
                 <img src="img/1234.jpg" alt="Code">
@@ -61,7 +61,7 @@
         </div>
     </section>
 
-    <section class="info">
+    <section class="info" id="program">
         <div class="container info__inner">
 
             <div class="info__block">
@@ -92,7 +92,7 @@
 
 </main>
 
-<footer class="footer">
+<footer class="footer" id="contact">
     <div class="container footer__inner">
         <div class="footer__links">
             <a href="#">Контакти</a>
@@ -100,12 +100,24 @@
             <a href="#">Підтримка</a>
         </div>
         <div class="footer__socials">
-            <a href="#"><img src="img/instagram.svg" alt="Instagram"></a>
-            <a href="#"><img src="img/linkedin.svg" alt="LinkedIn"></a>
-            <a href="#"><img src="img/twitter.svg" alt="X"></a>
+            <a href="https://instagram.com" target="_blank"><img src="img/instagram.svg" alt="Instagram"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="img/linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://twitter.com" target="_blank"><img src="img/twitter.svg" alt="X"></a>
         </div>
     </div>
 </footer>
 
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Запис на курс</h2>
+        <input type="text" placeholder="Ваше ім'я">
+        <input type="email" placeholder="Email">
+        <input type="tel" placeholder="Телефон">
+        <button id="submitForm">Відправити</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
